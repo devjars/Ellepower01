@@ -6,11 +6,11 @@ function Product() {
   return (
        <SectionFrame
     label="Our Product"
-    link="services"
+    link="notfound"
         headline=" Product"
       subheadline="We supply a wide range of high-quality electrical products, carefully selected to meet the demands of both residential and commercial applications, ensuring safety, efficiency, and long-lasting performance."
       buttonlabel="Contact us to Inquire"
-      buttonlink="/services">
+      buttonlink="/notfound">
 
 
 
@@ -31,14 +31,14 @@ function Product() {
 
 </div>
  <div className="w-full flex justify-center items-center mt-8 lg:hidden">
-    <Link to="/product" className="btn btn-wide btn-primary btn-outline   mx-auto font-bold font-primary py-6 uppercase">
+    <Link to="/notfound" className="btn btn-wide btn-primary btn-outline   mx-auto font-bold font-primary py-6 uppercase">
         View All
     </Link> 
  </div>
 
 <div className="hidden w-full lg:grid grid-cols-4 gap-2 mt-16">
     {Item.map((item,index)=>(
-        <figure key={index} className={`${index === 8 ? "col-start-2" : ""} max-h-[400px] h-full bg-white p-3 flex flex-col items-center text-center rounded-lg`}>
+        <figure key={index} className={`${index === 8 ? "col-start-2" : ""} max-h-[400px] h-full bg-white p-3 flex flex-col items-center text-center rounded-lg shadow border-base-100`}>
             <img src={item.image} alt={item.name} loading="lazy" className="max-h-[200px] object-contain bg-white" />
             <figcaption>
                 <h2 className="font-medium text-lg mt-2 text-primary">{item.name}</h2>

@@ -7,16 +7,16 @@ const Header = () => {
 
   const nav = [
     { li: 'Home', link: '/', },
-    { li: 'About us', link: 'about', offset: -10 },
+    { li: 'About us', link: '/notfound', offset: -10 },
     {
-      li: 'Services', link: 'service', offset: 230, subli: [
-        { li: 'Commersial Service', link: 'commercial' },
-        { li: 'Residential Service', link: 'residential' },
-        { li: 'Industrial Service', link: 'industrial' },
+      li: 'Services', link: '/notfound', offset: 230, subli: [
+        { li: 'Commersial Service', link: '/notfound' },
+        { li: 'Residential Service', link: '/notfound' },
+        { li: 'Industrial Service', link: '/notfound' },
       ]
     },
-    { li: 'Product', link: 'product', offset: -50 },
-    { li: 'Contact us', link: 'contact', offset: 10 },
+    { li: 'Product', link: '/notfound', offset: -50 },
+    { li: 'Contact us', link: '/notfound', offset: 10 },
   ];
 
   return (
@@ -68,7 +68,7 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-       <Link to="/" className="navbar-center flex items-center">
+       <Link to="/notfound" className="navbar-center flex items-center">
              {/* <div className="navbar-center flex items-center bg-green-900"> */}
           <img className="h-12" src={Logo} alt="ELLE POWER trading & services logo" />
           <h2 className="ml-2 text-white font-bold text-lg lg:text-gray-900 xl:text-2xl font-primary">

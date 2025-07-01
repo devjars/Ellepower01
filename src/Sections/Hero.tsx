@@ -42,10 +42,10 @@ function Hero() {
                 Reliable Electric Services For <br/> <span className="text-primary">Every Need</span></h2>
             <p className="text-lg  mt-4 font-secondary text-accent lg:text-xl lg:font-medium lg:mt-8 ">Serving residential, commercial, and industrial clients with expert workmanship, dependable service, and lasting results.</p>
             <div className="w-full flex flex-col gap-4 items-center mt-8 lg:flex-row lg:justify-center">
-                <Link to="/book-service" className="flex items-center justify-center gap-4 btn btn-primary btn-wide py-6 rounded-full font-bold font-primary">
+                <Link to="/notfound" className="flex items-center justify-center gap-4 btn btn-primary btn-wide py-6 rounded-full font-bold font-primary">
              BOOK A SERVICE <span><RxArrowTopRight /></span>
                 </Link>
-                  <Link to="/product" className="flex items-center justify-center gap-4 btn btn-secondary btn-wide btn-outline py-6 rounded-full font-bold font-primary">
+                  <Link to="/notfound" className="flex items-center justify-center gap-4 btn btn-secondary btn-wide btn-outline py-6 rounded-full font-bold font-primary">
                 BROWSE PRODUCT <span><RxArrowTopRight /></span>
                 </Link>
                
