@@ -71,7 +71,7 @@ const Header = () => {
        <Link to="/" className="navbar-center flex items-center">
              {/* <div className="navbar-center flex items-center bg-green-900"> */}
           <img className="h-12" src={Logo} alt="ELLE POWER trading & services logo" />
-          <h2 className="ml-2 text-white font-bold text-lg lg:text-gray-900 xl:text-2xl">
+          <h2 className="ml-2 text-white font-bold text-lg lg:text-gray-900 xl:text-2xl font-primary">
             ELLE POWER
             <p className="text-[0.6rem] tracking-[1px] lg:text-[0.7rem] xl:text-[0.9rem]">
               Trading & Services
@@ -117,7 +117,7 @@ const Header = () => {
 
       {/* CTA Button */}
       <div className="navbar-end hidden [@media(min-width:400px)]:flex">
-        <button className="btn btn-md lg:btn-primary">FREE QUOTE</button>
+        <button className="btn btn-xs sm:btn-sm md:btn-base lg:btn-primary font-primary py-5">GET A FREE QUOTE</button>
       </div>
     </header>
   );

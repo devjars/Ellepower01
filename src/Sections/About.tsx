@@ -42,7 +42,7 @@ function About() {
         <div className="w-full lg:pr-8  ">
                 <div className="flex flex-col  items-center text-center lg:text-left lg:items-start">
                     <Label link="/about" label="About"/>
-         <h2 className="mt-8 font-bold text-2xl px-4 font-primary sm:text-2xl md:text-3xl lg:mt-4 ">Your trusted electrical <span className="text-primary">service partner</span></h2>
+         <h2 className="mt-8 font-bold text-2xl px-4 font-primary sm:text-2xl md:text-3xl lg:mt-4 lg:text-5xl ">Your trusted electrical <span className="text-primary">service partner</span></h2>
          <p className="mt-6 px-4 font-tertiary lg:px-0">With years of hands-on experience, our team provides reliable and top-quality electrical services for residential, commercial, and industrial needs. From installations to emergency repairs, we are committed to powering your projects with expertise and integrity.</p>
                     
                 </div>

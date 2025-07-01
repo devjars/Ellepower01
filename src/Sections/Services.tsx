@@ -33,13 +33,12 @@ function Services() {
    <SectionFrame
     label="Our Services"
     link="services"
-     headline="Elle Power Electrical"
-      highlight="Services"
+        headline=" Services"
       subheadline="Our experienced electricians expertly handle commercial, residential, and industrial electrical projects, delivering fast, reliable, and professional solutions tailored to your specific needs."
       buttonlabel="Book a Service"
       buttonlink="/services">
 
-        <div className="w-full grid grid-rows-3 gap-8 px-4 mt-16 justify-items-center lg:grid-cols-3">   
+        <div className="w-full   grid grid-cols-1 gap-8 px-4 mt-16 justify-items-center lg:grid-cols-3 lg:gap-4">   
                 {service.map((serv,index)=>(
                     <div key={index} className="bg-base-200  rounded-2xl overflow-hidden border border-base-300 max-w-[550px] " >
                         <img src={serv.img} alt={`${serv.headline} image`} className="h-[300px] w-full object-cover" loading="lazy" />

@@ -1,9 +1,12 @@
 import Partnership from './Components/Partnership'
 import ServicesMarquee from './Components/ServicesMarquee'
 import About from './Sections/About'
+import ContactUs from './Sections/ContactUs'
 import Hero from './Sections/Hero'
+import Product from './Sections/Product'
 import Services from './Sections/Services'
 import Specialty from './Sections/Specialty'
+import Testimonials from './Sections/Testimonials'
 
 function Home() {
   return (
@@ -14,6 +17,9 @@ function Home() {
         <ServicesMarquee/>
         <Services/>
         <Specialty/>
+        <Product/>
+        <Testimonials/>
+        <ContactUs/>
     </main>
   )
 }
