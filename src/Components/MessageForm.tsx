@@ -78,15 +78,18 @@ function MessageForm() {
         className="w-full px-4 py-3 border border-gray-300 text-black/70 rounded-md resize-none h-32 focus:outline-none focus:ring-2 focus:ring-ctmred"
       ></textarea>
 
-      <button
+   <button
         type="submit"
         disabled={loading}
-        className={`btn btn-primary text-white px-6 py-3 rounded-md font-semibold transition ${
+        className={`bg-primary text-white px-6 py-3 rounded-md font-semibold transition ${
           loading ? 'opacity-60 cursor-not-allowed' : 'hover:bg-red-700'
         }`}
       >
         {loading ? 'Sending...' : 'Send Message'}
       </button>
+
+
+
 
       {status === true && (
         <p className="text-center text-sm text-green-700">Message sent successfully!</p>
