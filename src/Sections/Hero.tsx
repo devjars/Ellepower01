@@ -33,7 +33,7 @@ function Hero() {
   return (
     <section className="w-full flex flex-col justify-between relative" >
       <img 
-    src="../../public/bg.webp"
+    src="/public/bg.webp"
     alt="Electrical Service Background" 
     className="absolute inset-0 w-full h-full object-cover " 
     loading="eager" 
