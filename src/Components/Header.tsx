@@ -67,17 +67,16 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-       <Link to="/notfound" className="navbar-center flex items-center">
-             {/* <div className="navbar-center flex items-center bg-green-900"> */}
-          <img className="h-12" src={Logo} alt="ELLE POWER trading & services logo" />
-          <h2 className="ml-2 text-white font-bold text-lg lg:text-gray-900 xl:text-2xl font-primary">
-            ELLE POWER
-            <p className="text-[0.6rem] tracking-[1px] lg:text-[0.7rem] xl:text-[0.9rem]">
-              Trading & Services
-            </p>
-          </h2>
-        {/* </div> */}
-       </Link>
+      <Link to="/notfound" className="navbar-center flex items-center">
+  <img className="h-14 w-14" src={Logo} alt="ELLE POWER trading & services logo" />
+  <div className="ml-2 text-white lg:text-gray-900 xl:text-2xl font-primary text-center">
+    <h2 className="font-bold lg:text-2xl">ELLE POWER</h2>
+    <p className="text-[0.6rem] tracking-[1px] lg:text-[0.7rem] xl:text-[0.9rem] font-bold">
+      Trading & Services
+    </p>
+  </div>
+</Link>
+
       </div>
 
       {/* Center Nav (Desktop Only) */}
