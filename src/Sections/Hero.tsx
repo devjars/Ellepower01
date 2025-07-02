@@ -1,4 +1,3 @@
-import bg from "../assets/1687350836573.webp"
 import { RxArrowTopRight } from "react-icons/rx";
 import { BsPlus } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -32,13 +31,20 @@ function Hero() {
   ];
 
   return (
-    <section className="w-full flex flex-col justify-between " 
-    style={{backgroundImage: `url(${bg})`, backgroundRepeat : "no-repeat", backgroundSize : "cover", backgroundPosition: "center"}}>
+    <section className="w-full flex flex-col justify-between relative" >
+      <img 
+    src="../../public/bg.webp"
+    alt="Electrical Service Background" 
+    className="absolute inset-0 w-full h-full object-cover " 
+    loading="eager" 
+    fetchPriority="high"
+  />
+  <div className="bg-black/10 absolute inset-0"/>
       
       <div className="w-full h-full flex flex-col items-center justify-center gap-37 py-16  bg-gradient-to-t from-black/90 via-black/85 to-black/90
-      px-6 sm:px-12">
+      px-6 sm:px-12 z-20">
         <div className="w-full flex flex-col items-center text-center pt-16 lg:pt-28 lg:w-[75%] ">
-            <h2 className="text-3xl text-base-100 font-bold font-primary leading-12 min-[360px]:text-4xl lg:leading-16 lg:text-6xl ">
+            <h2 className="text-3xl text-base-100 font-bold  font-primary  leading-12 min-[360px]:text-4xl lg:leading-16 lg:text-6xl ">
                 Reliable Electric Services For <br/> <span className="text-primary">Every Need</span></h2>
             <p className="text-lg  mt-4 font-secondary text-accent lg:text-xl lg:font-medium lg:mt-8 ">Serving residential, commercial, and industrial clients with expert workmanship, dependable service, and lasting results.</p>
             <div className="w-full flex flex-col gap-4 items-center mt-8 lg:flex-row lg:justify-center">

@@ -67,7 +67,7 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-      <Link to="/notfound" className="navbar-center flex items-center">
+      <Link to="/notfound" className="navbar-center flex items-center h-full">
   <img className="h-14 w-14" src={Logo} alt="ELLE POWER trading & services logo" />
   <div className="ml-2 text-white lg:text-gray-900 xl:text-2xl font-primary text-center">
     <h2 className="font-bold lg:text-2xl">ELLE POWER</h2>

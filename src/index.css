@@ -6,9 +6,9 @@
 
 @theme {
  
-    --font-primary :  "Lexend", sans-serif;
-    --font-secondary : "Manrope", sans-serif;
-    --font-tertiary : "Poppins", sans-serif;
+    --font-primary :  "Lexend", system-ui, sans-serif;
+    --font-secondary : "Manrope", system-ui, sans-serif;
+    --font-tertiary : "Poppins", system-ui, sans-serif;
      --shadow-card : rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
     

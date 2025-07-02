@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import {Suspense, lazy} from "react"
 
 import Header from './Components/Header'
-import Footer from './Components/Footer'
+// import Footer from './Components/Footer'
 import Loading from './Components/Loading'
 import Mainloading from './Components/Mainloading'
 const Home = lazy(()=> import("./Home"))
@@ -27,7 +27,7 @@ function App() {
             } />
        
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </Router>
   )
 }
