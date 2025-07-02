@@ -53,27 +53,27 @@ const scrollToTop = ():void => {
 
   
   return (
-    <main className='w-full min-w-[300px] max-w-[1536px] mx-auto  '>
+    <main className='w-full min-w-[300px] max-w-[1536px] mx-auto bg-base-100 '>
         <Hero/>
         <About/>
         <Partnership/>
         <ServicesMarquee/>
-        <div ref={serviceRef} />
-       {isserviceVisible && <Suspense fallback={<div className="skeleton h-32 w-full"></div>}>
+        <div className='h-1 mt-32' ref={serviceRef} />
+       {isserviceVisible && <Suspense fallback={<div className="skeleton h-[30vh] w-full"></div>}>
          <Services/></Suspense>}
 
-        <div  ref={specialtyRef} />
-       {isspecialtyVisible &&  <Suspense fallback={<div className="skeleton h-32 w-full"></div>}>
+        <div  className='h-1 mt-32'   ref={specialtyRef} />
+       {isspecialtyVisible &&  <Suspense fallback={<div className="skeleton h-[30vh] w-full"></div>}>
         <Specialty/>
         </Suspense>}
 
-         <div ref={productRef} />
-       {isproductVisible &&  <Suspense fallback={<div className="skeleton h-32 w-full"></div>}>
+         <div  className='h-1 mt-32'  ref={productRef} />
+       {isproductVisible &&  <Suspense fallback={<div className="skeleton h-[30vh] w-full"></div>}>
         <Product/>
         </Suspense> }
 
-       <div ref={TestimonialRef} />
-       { istestimonialVisible &&   <Suspense fallback={<div className="skeleton h-32 w-full"></div>}>
+       <div  className='h-1 mt-32'  ref={TestimonialRef} />
+       { istestimonialVisible &&   <Suspense fallback={<div className="skeleton h-[30vh] w-full"></div>}>
         <Testimonials/>
         </Suspense>}
         

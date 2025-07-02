@@ -1,7 +1,8 @@
 import Item from "../assets/Item"
 import SectionFrame from "../Components/SectionFrame"
 import { Link } from "react-router-dom"
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 function Product() {
   return (
        <SectionFrame
@@ -18,9 +19,9 @@ function Product() {
   
   {Item.map((item,index)=>(
     <figure key={index} className="carousel-item flex flex-col items-center justify-center bg-white p-2 rounded-2xl">
-    <img
-      src={item.image}
-      className="w-[300px] h-[300px] object-contain bg-white rounded-xl" />
+   
+            <LazyLoadImage src={item.image} alt={item.name} effect="blur" className="w-[200px] h-[300px] object-contain bg-white rounded-xl"/>
+
 
       <figcaption>
         <h3 className="mt-4 text-xl font-medium font-primary text-accent">{item.name}</h3>
@@ -39,7 +40,8 @@ function Product() {
 <div className="hidden w-full lg:grid grid-cols-4 gap-2 mt-16">
     {Item.map((item,index)=>(
         <figure key={index} className={`${index === 8 ? "col-start-2" : ""} max-h-[400px] h-full bg-white p-3 flex flex-col items-center text-center rounded-lg shadow border-base-100`}>
-            <img src={item.image} alt={item.name} loading="lazy" className="max-h-[200px] object-contain bg-white" />
+            {/* <img src={item.image} alt={item.name} loading="lazy" className="max-h-[200px] object-contain bg-white" /> */}
+            <LazyLoadImage src={item.image}alt={item.name} effect="blur"  className="max-h-[200px] h-[180px] w-full object-contain bg-white"/>
             <figcaption>
                 <h2 className="font-medium text-lg mt-2 text-primary">{item.name}</h2>
                 <p className="text-sm font-tertiary mt-4">{item.description}</p>

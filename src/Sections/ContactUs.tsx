@@ -1,11 +1,13 @@
+import { lazy } from "react"
 import image from "../assets/messback.webp"
-import MessageForm from "../Components/MessageForm"
+
+const MessageForm = lazy(()=> import("../Components/MessageForm"))
 
 function ContactUs() {
   return (
   <div id="contact" className="w-full pb-8">
   <div
-    className="w-full min-h-screen relative bg-cover bg-center lg:min-h-[60vh]"
+    className="w-full min-h-[800px] relative bg-cover bg-center lg:min-h-[540px]  max-h-[400px]"
     style={{ backgroundImage: `url(${image})` }}
   >
     {/* Dark overlay */}

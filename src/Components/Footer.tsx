@@ -11,7 +11,7 @@ function Footer() {
     window.open('https://maps.app.goo.gl/DVm2Vafa3DbKTCBD9', '_blank');
   };
   return (
-   <footer className="footer max-w-[1550px] mx-auto sm:footer-horizontal bg-base-200 text-base-content p-10 mt-16
+   <footer className="footer max-w-[1550px] mx-auto sm:footer-horizontal bg-base-200 text-base-content p-10 
    ">
   <aside>
     <Link to="/" className="navbar-center flex items-center">

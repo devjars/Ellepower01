@@ -1,4 +1,3 @@
-import { div, img, li } from "framer-motion/client"
 import Logo1 from "../assets/logoipsum-264.svg"
 import Logo2 from "../assets/logoipsum-330.svg"
 import Logo3 from "../assets/logoipsum-342.svg"

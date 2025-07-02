@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import Logo from "../assets/newlogos.webp";
 import { Link } from "react-router-dom";
 const Header = () => {

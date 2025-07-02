@@ -56,7 +56,6 @@ function Services() {
         <div className="w-full   grid grid-cols-1 gap-8 px-4 mt-16 justify-items-center lg:grid-cols-3 lg:gap-4">   
                 {service.map((serv,index)=>(
                     <div key={index} className="bg-base-200  rounded-2xl overflow-hidden border border-base-300 max-w-[550px] " >
-                        {/* <img src={serv.img} alt={`${serv.headline} image`} className="h-[300px] w-full object-cover" loading="lazy" /> */}
                           <div className="w-full">
                             <LazyLoadImage
                         src={serv.img}
