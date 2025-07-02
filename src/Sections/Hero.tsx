@@ -1,6 +1,7 @@
 import { RxArrowTopRight } from "react-icons/rx";
 import { BsPlus } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import bg from "../assets/bg.webp"
 type AboutDetails = {
   countmax: number;
   title: string;
@@ -33,7 +34,7 @@ function Hero() {
   return (
     <section className="w-full flex flex-col justify-between relative" >
       <img 
-    src="/public/bg.webp"
+    src={bg}
     alt="Electrical Service Background" 
     className="absolute inset-0 w-full h-full object-cover " 
     loading="eager" 
